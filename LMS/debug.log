@@ -1,0 +1,3307 @@
+Watching for file changes with StatReloader
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x0000027DD5C12270>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 3 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 673
+Watching for file changes with StatReloader
+Unauthorized: /api/register/
+"GET /api/register/ HTTP/1.1" 401 183
+C:\Users\pradatta\Desktop\LMS\LMS\LMS\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\models.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /api/register/
+"GET /api/register/ HTTP/1.1" 401 183
+Watching for file changes with StatReloader
+Unauthorized: /api/register/
+"GET /api/register/ HTTP/1.1" 401 107
+Unauthorized: /api/register/
+"POST /api/register/ HTTP/1.1" 401 107
+Not Found: /
+"GET / HTTP/1.1" 404 2889
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2940
+Method Not Allowed: /api/register/
+"GET /api/register/ HTTP/1.1" 405 5689
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+"POST /api/register/ HTTP/1.1" 201 6372
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7493
+"POST /api/login/ HTTP/1.1" 200 8048
+"POST /api/authors/ HTTP/1.1" 201 40
+"POST /api/students/ HTTP/1.1" 201 126
+"POST /api/books/ HTTP/1.1" 201 106
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x00000256C2425D30>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'book_id': 1, 'title': 'The Great Gatsby', 'author': 1, 'genre': 'Fiction', 'isbn': '9780743273565', 'quantity': 10}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 191
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x00000256C233F9D0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 1, 'student': 1, 'user': 'dcf869d5-c659-41f1-a322-69d06a6b95c4', 'book': 1, 'transaction_type': 'borrow', 'date': '2025-02-16T10:30:00Z'}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 47
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x00000256C233F9D0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 1, 'student': 1, 'user': 'dcf869d5-c659-41f1-a322-69d06a6b95c4', 'book': 1, 'transaction_type': 'borrow', 'date': '2010/01/01'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 215
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2889
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7493
+"POST /api/login/ HTTP/1.1" 200 8048
+Internal Server Error: /api/login
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/login HTTP/1.1" 500 71335
+Watching for file changes with StatReloader
+Internal Server Error: /api/login
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/login HTTP/1.1" 500 71335
+Not Found: /
+"GET / HTTP/1.1" 404 2889
+"GET /api/login HTTP/1.1" 301 0
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7493
+Internal Server Error: /api/login
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/login HTTP/1.1" 500 72140
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 183
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 183
+Unauthorized: /api/login/
+"GET /api/login/ HTTP/1.1" 401 183
+Unauthorized: /api/login/
+"POST /api/login/ HTTP/1.1" 401 183
+C:\Users\pradatta\Desktop\LMS\LMS\Author\models.py changed, reloading.
+C:\Users\pradatta\Desktop\LMS\LMS\Author\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Author\models.py changed, reloading.
+C:\Users\pradatta\Desktop\LMS\LMS\Author\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2889
+"POST /api/login/ HTTP/1.1" 200 594
+"POST /api/login/ HTTP/1.1" 200 594
+- Broken pipe from ('127.0.0.1', 64116)
+Watching for file changes with StatReloader
+"POST /api/login/ HTTP/1.1" 200 594
+- Broken pipe from ('127.0.0.1', 49975)
+"GET /api/books/ HTTP/1.1" 200 7135
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2940
+Not Found: /
+"GET / HTTP/1.1" 404 2889
+Not Found: /api.login
+"GET /api.login HTTP/1.1" 404 2934
+"GET /api/login HTTP/1.1" 301 0
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7493
+"POST /api/login/ HTTP/1.1" 200 8048
+"GET /api/authors/ HTTP/1.1" 200 41
+Internal Server Error: /api/authors/1/
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Author\views.py", line 18, in retrieve
+    author = self.service.get_author_by_id(pk)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Author\service.py", line 11, in get_author_by_id
+    return self.repository.get_by_id(author_id)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Author\repositories.py", line 11, in get_by_id
+    return self.model.objects.filter(author_id=author_id).first()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1303, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1768, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'author_id' into field. Choices are: AuthorID, Bio, Name, books
+"GET /api/authors/1/ HTTP/1.1" 500 149046
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Author\repositories.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Author\service.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/authors/1/ HTTP/1.1" 200 39
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+"POST /api/authors/ HTTP/1.1" 201 39
+"POST /api/authors/ HTTP/1.1" 201 39
+"GET /api/authors/ HTTP/1.1" 200 121
+"DELETE /api/authors/3/ HTTP/1.1" 204 0
+"GET /api/authors/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 81
+"PUT /api/authors/1/ HTTP/1.1" 200 39
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 81
+"PUT /api/authors/1/ HTTP/1.1" 200 39
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 81
+"PUT /api/authors/2/ HTTP/1.1" 200 39
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 81
+"PUT /api/authors/2/ HTTP/1.1" 200 39
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 81
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 81
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 81
+Watching for file changes with StatReloader
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 81
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 81
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 81
+Watching for file changes with StatReloader
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 81
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 81
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 81
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('29')
+"29" 400 -
+"GET /api/authors/ HTTP/1.1" 200 81
+- Broken pipe from ('127.0.0.1', 50630)
+"POST /api/authors/ HTTP/1.1" 201 39
+"POST /api/authors/ HTTP/1.1" 201 39
+"POST /api/authors/ HTTP/1.1" 201 39
+"GET /api/authors/ HTTP/1.1" 200 201
+"DELETE /api/authors/4/ HTTP/1.1" 204 0
+"GET /api/authors/ HTTP/1.1" 200 161
+"DELETE /api/authors/5/ HTTP/1.1" 204 0
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"PUT /api/authors/2/ HTTP/1.1" 200 39
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"PUT /api/authors/6/ HTTP/1.1" 200 39
+code 400, message Bad request syntax ('2C')
+"2C" 400 -
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 121
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('32')
+"32" 400 -
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('32')
+"32" 400 -
+"GET /api/authors/ HTTP/1.1" 200 121
+C:\Users\pradatta\Desktop\LMS\LMS\LMS\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+Watching for file changes with StatReloader
+Unauthorized: /api/authors/
+"GET /api/authors/ HTTP/1.1" 401 183
+Unauthorized: /api/authors/
+"GET /api/authors/ HTTP/1.1" 401 183
+Not Found: /
+"GET / HTTP/1.1" 404 2889
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7493
+"POST /api/login/ HTTP/1.1" 200 8048
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+Watching for file changes with StatReloader
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+Not Found: /
+"GET / HTTP/1.1" 404 2889
+"GET /api/authors/ HTTP/1.1" 200 7288
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/ HTTP/1.1" 200 121
+Watching for file changes with StatReloader
+"GET /api/authors/ HTTP/1.1" 200 121
+"GET /api/authors/1/ HTTP/1.1" 200 39
+"GET /api/authors/1/ HTTP/1.1" 200 39
+"GET /api/authors/ HTTP/1.1" 200 121
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 121
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 121
+C:\Users\pradatta\Desktop\LMS\LMS\Author\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('2B')
+"2B" 400 -
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Author\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/authors/ HTTP/1.1" 200 121
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 121
+Watching for file changes with StatReloader
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"POST /api/authors/ HTTP/1.1" 201 39
+"GET /api/authors/ HTTP/1.1" 200 161
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('31')
+"31" 400 -
+"GET /api/authors/ HTTP/1.1" 200 161
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('31')
+"31" 400 -
+"GET /api/authors/ HTTP/1.1" 200 161
+Internal Server Error: /api/authors/
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "Author_author_pkey"
+DETAIL:  Key ("AuthorID")=(0) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Author\views.py", line 29, in create
+    author = self.service.create_author(serializer.validated_data)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Author\service.py", line 14, in create_author
+    return self.repository.create(data)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Author\repositories.py", line 14, in create
+    return self.model.objects.create(**data)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "Author_author_pkey"
+DETAIL:  Key ("AuthorID")=(0) already exists.
+
+"POST /api/authors/ HTTP/1.1" 500 185804
+"POST /api/authors/ HTTP/1.1" 201 46
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('31')
+"31" 400 -
+"GET /api/authors/ HTTP/1.1" 200 208
+Watching for file changes with StatReloader
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 208
+"DELETE /api/authors/1/ HTTP/1.1" 204 0
+"GET /api/authors/ HTTP/1.1" 200 168
+"DELETE /api/authors/7/ HTTP/1.1" 204 0
+"GET /api/authors/ HTTP/1.1" 200 121
+"DELETE /api/authors/0/ HTTP/1.1" 204 0
+"GET /api/authors/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 81
+"POST /api/authors/ HTTP/1.1" 201 39
+"GET /api/authors/ HTTP/1.1" 200 121
+C:\Users\pradatta\Desktop\LMS\LMS\Author\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/authors/
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Author\views.py", line 28, in create
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 495, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 378, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'AuthorID' was declared on serializer AuthorSerializer, but has not been included in the 'fields' option.
+"POST /api/authors/ HTTP/1.1" 500 132976
+Internal Server Error: /api/authors/
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Author\views.py", line 15, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 523, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'AuthorID' was declared on serializer AuthorSerializer, but has not been included in the 'fields' option.
+"GET /api/authors/ HTTP/1.1" 500 136577
+C:\Users\pradatta\Desktop\LMS\LMS\Author\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/authors/ HTTP/1.1" 201 26
+"GET /api/authors/ HTTP/1.1" 200 109
+C:\Users\pradatta\Desktop\LMS\LMS\Author\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Author\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/authors/ HTTP/1.1" 200 161
+C:\Users\pradatta\Desktop\LMS\LMS\Author\serializer.py changed, reloading.
+Internal Server Error: /api/authors/
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "Author_author_pkey"
+DETAIL:  Key ("AuthorID")=(0) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Author\views.py", line 28, in create
+    author = self.service.create_author(serializer.validated_data)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Author\service.py", line 14, in create_author
+    return self.repository.create(data)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Author\repositories.py", line 14, in create
+    return self.model.objects.create(**data)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "Author_author_pkey"
+DETAIL:  Key ("AuthorID")=(0) already exists.
+
+"POST /api/authors/ HTTP/1.1" 500 183806
+"GET /api/authors/ HTTP/1.1" 200 161
+Watching for file changes with StatReloader
+Internal Server Error: /api/authors/
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Author\views.py", line 27, in create
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 495, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 378, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'AuthorID' was declared on serializer AuthorSerializer, but has not been included in the 'fields' option.
+"POST /api/authors/ HTTP/1.1" 500 133338
+Internal Server Error: /api/authors/
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Author\views.py", line 15, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 523, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'AuthorID' was declared on serializer AuthorSerializer, but has not been included in the 'fields' option.
+"GET /api/authors/ HTTP/1.1" 500 136682
+C:\Users\pradatta\Desktop\LMS\LMS\Author\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/authors/ HTTP/1.1" 201 56
+"GET /api/authors/ HTTP/1.1" 200 218
+"POST /api/authors/ HTTP/1.1" 201 52
+"GET /api/authors/ HTTP/1.1" 200 271
+"GET /api/authors/ HTTP/1.1" 200 271
+"POST /api/authors/ HTTP/1.1" 201 47
+"GET /api/authors/ HTTP/1.1" 200 319
+"GET /api/authors/ HTTP/1.1" 200 319
+"PUT /api/authors/2/ HTTP/1.1" 200 39
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 319
+C:\Users\pradatta\Desktop\LMS\LMS\Author\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/authors/ HTTP/1.1" 200 319
+"PUT /api/authors/2/ HTTP/1.1" 200 39
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 319
+"GET /api/authors/ HTTP/1.1" 200 319
+"PUT /api/authors/6/ HTTP/1.1" 200 39
+code 400, message Bad request syntax ('27')
+"27" 400 -
+"GET /api/authors/ HTTP/1.1" 200 319
+"GET /api/authors/ HTTP/1.1" 200 319
+"GET /api/authors/ HTTP/1.1" 200 319
+Method Not Allowed: /api/authors/0/
+"POST /api/authors/0/ HTTP/1.1" 405 41
+"GET /api/authors/ HTTP/1.1" 200 319
+"GET /api/authors/ HTTP/1.1" 200 319
+Method Not Allowed: /api/authors/0/
+"POST /api/authors/0/ HTTP/1.1" 405 41
+Watching for file changes with StatReloader
+"GET /api/authors/ HTTP/1.1" 200 319
+"GET /api/authors/ HTTP/1.1" 200 319
+"GET /api/authors/ HTTP/1.1" 200 319
+"GET /api/authors/ HTTP/1.1" 200 319
+"GET /api/authors/ HTTP/1.1" 200 319
+Method Not Allowed: /api/authors/0/
+"POST /api/authors/0/ HTTP/1.1" 405 41
+"GET /api/authors/ HTTP/1.1" 200 319
+"POST /api/authors/ HTTP/1.1" 201 46
+"GET /api/authors/ HTTP/1.1" 200 366
+"GET /api/authors/ HTTP/1.1" 200 366
+Method Not Allowed: /api/authors/12/
+"POST /api/authors/12/ HTTP/1.1" 405 41
+"GET /api/authors/ HTTP/1.1" 200 366
+"GET /api/authors/ HTTP/1.1" 200 366
+Method Not Allowed: /api/authors/0/
+"POST /api/authors/0/ HTTP/1.1" 405 41
+"GET /api/authors/ HTTP/1.1" 200 366
+"GET /api/authors/ HTTP/1.1" 200 366
+Method Not Allowed: /api/authors/0/
+"POST /api/authors/0/ HTTP/1.1" 405 41
+"GET /api/authors/ HTTP/1.1" 200 366
+- Broken pipe from ('127.0.0.1', 52171)
+"GET /api/authors/ HTTP/1.1" 200 366
+"GET /api/authors/ HTTP/1.1" 200 366
+"PUT /api/authors/0/ HTTP/1.1" 200 42
+"GET /api/authors/ HTTP/1.1" 200 369
+"GET /api/authors/ HTTP/1.1" 200 369
+C:\Users\pradatta\Desktop\LMS\LMS\Book\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Book\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Book\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Book\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/authors/ HTTP/1.1" 200 369
+Not Found: /api/bookd/
+"POST /api/bookd/ HTTP/1.1" 404 13038
+Not Found: /api/bookd/
+"POST /api/bookd/ HTTP/1.1" 404 13038
+Unauthorized: /api/books/
+"POST /api/books/ HTTP/1.1" 401 183
+Not Found: /
+"GET / HTTP/1.1" 404 2889
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7493
+"POST /api/login/ HTTP/1.1" 200 8048
+"POST /api/books/ HTTP/1.1" 201 105
+"POST /api/books/ HTTP/1.1" 201 87
+"POST /api/books/ HTTP/1.1" 201 86
+"GET /api/authors/ HTTP/1.1" 200 369
+- Broken pipe from ('127.0.0.1', 52367)
+"GET /api/authors/ HTTP/1.1" 200 369
+"GET /api/authors/ HTTP/1.1" 200 369
+"GET /api/authors/ HTTP/1.1" 200 369
+"GET /api/books/ HTTP/1.1" 200 282
+"GET /api/authors/ HTTP/1.1" 200 369
+"POST /api/login/ HTTP/1.1" 200 594
+"GET /api/authors/ HTTP/1.1" 200 369
+"GET /api/books/ HTTP/1.1" 200 282
+"GET /api/authors/ HTTP/1.1" 200 369
+"GET /api/books/ HTTP/1.1" 200 282
+Internal Server Error: /api/books/4
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/books/4/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/books/4 HTTP/1.1" 500 73742
+"GET /api/books/ HTTP/1.1" 200 282
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 184
+code 400, message Bad request syntax ('50')
+"50" 400 -
+"GET /api/books/ HTTP/1.1" 200 282
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 184
+code 400, message Bad request syntax ('50')
+"50" 400 -
+"GET /api/books/ HTTP/1.1" 200 282
+C:\Users\pradatta\Desktop\LMS\LMS\Book\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Book\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Book\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 184
+code 400, message Bad request syntax ('50')
+"50" 400 -
+"GET /api/books/ HTTP/1.1" 200 282
+- Broken pipe from ('127.0.0.1', 52507)
+"GET /api/authors/ HTTP/1.1" 200 369
+"GET /api/books/ HTTP/1.1" 200 282
+"GET /api/authors/ HTTP/1.1" 200 369
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 38
+"GET /api/books/ HTTP/1.1" 200 282
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 38
+"GET /api/books/ HTTP/1.1" 200 282
+C:\Users\pradatta\Desktop\LMS\LMS\Book\serializer.py changed, reloading.
+Bad Request: /api/books/
+- Broken pipe from ('127.0.0.1', 52520)
+Watching for file changes with StatReloader
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 38
+"GET /api/books/ HTTP/1.1" 200 282
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 38
+"GET /api/books/ HTTP/1.1" 200 282
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 38
+"GET /api/books/ HTTP/1.1" 200 282
+C:\Users\pradatta\Desktop\LMS\LMS\Book\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 38
+"GET /api/books/ HTTP/1.1" 200 282
+Watching for file changes with StatReloader
+"POST /api/books/ HTTP/1.1" 201 112
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 48
+"POST /api/books/ HTTP/1.1" 201 107
+"POST /api/books/ HTTP/1.1" 201 105
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 48
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 38
+"GET /api/books/ HTTP/1.1" 200 609
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 38
+Internal Server Error: /api/books/
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\fields.py", line 437, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\fields.py", line 104, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'Book' object has no attribute 'AuthorId'. Did you mean: 'author_id'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Book\views.py", line 15, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    attribute = field.get_attribute(instance)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\relations.py", line 189, in get_attribute
+    return super().get_attribute(instance)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\fields.py", line 470, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `author` on serializer `BookSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Book` instance.
+Original exception text was: 'Book' object has no attribute 'AuthorId'.
+"GET /api/books/ HTTP/1.1" 500 134612
+C:\Users\pradatta\Desktop\LMS\LMS\Book\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Book\serializer.py changed, reloading.
+Internal Server Error: /api/books/
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Book\views.py", line 27, in create
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 495, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 378, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 373, in fields
+    fields[key] = value
+    ~~~~~~^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\utils\serializer_helpers.py", line 167, in __setitem__
+    field.bind(field_name=key, parent=self.serializer)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\fields.py", line 358, in bind
+    assert self.source != field_name, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: It is redundant to specify `source='author'` on field 'PrimaryKeyRelatedField' in serializer 'BookSerializer', because it is the same as the field name. Remove the `source` keyword argument.
+"POST /api/books/ HTTP/1.1" 500 134536
+Internal Server Error: /api/books/
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Book\views.py", line 15, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 523, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 373, in fields
+    fields[key] = value
+    ~~~~~~^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\utils\serializer_helpers.py", line 167, in __setitem__
+    field.bind(field_name=key, parent=self.serializer)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\fields.py", line 358, in bind
+    assert self.source != field_name, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: It is redundant to specify `source='author'` on field 'PrimaryKeyRelatedField' in serializer 'BookSerializer', because it is the same as the field name. Remove the `source` keyword argument.
+"GET /api/books/ HTTP/1.1" 500 137175
+Watching for file changes with StatReloader
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 38
+"GET /api/books/ HTTP/1.1" 200 609
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 38
+"GET /api/books/ HTTP/1.1" 200 609
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/login/ HTTP/1.1" 200 594
+"GET /api/authors/ HTTP/1.1" 200 369
+"POST /api/authors/ HTTP/1.1" 201 46
+"GET /api/authors/ HTTP/1.1" 200 416
+"DELETE /api/authors/0/ HTTP/1.1" 204 0
+"GET /api/authors/ HTTP/1.1" 200 373
+"DELETE /api/authors/8/ HTTP/1.1" 204 0
+"GET /api/authors/ HTTP/1.1" 200 333
+"DELETE /api/authors/9/ HTTP/1.1" 204 0
+"GET /api/authors/ HTTP/1.1" 200 276
+"DELETE /api/authors/10/ HTTP/1.1" 204 0
+"GET /api/authors/ HTTP/1.1" 200 223
+"DELETE /api/authors/11/ HTTP/1.1" 204 0
+Not Found: /api/authors/11/
+"DELETE /api/authors/11/ HTTP/1.1" 404 28
+"GET /api/authors/ HTTP/1.1" 200 175
+Not Found: /api/authors/11/
+"DELETE /api/authors/11/ HTTP/1.1" 404 28
+"GET /api/authors/ HTTP/1.1" 200 175
+Not Found: /api/authors/11/
+"DELETE /api/authors/11/ HTTP/1.1" 404 28
+"GET /api/authors/ HTTP/1.1" 200 175
+"DELETE /api/authors/2/ HTTP/1.1" 204 0
+"GET /api/authors/ HTTP/1.1" 200 135
+"DELETE /api/authors/6/ HTTP/1.1" 204 0
+"GET /api/authors/ HTTP/1.1" 200 95
+"DELETE /api/authors/12/ HTTP/1.1" 204 0
+"GET /api/authors/ HTTP/1.1" 200 48
+"GET /api/authors/ HTTP/1.1" 200 48
+"PUT /api/authors/13/ HTTP/1.1" 200 43
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/books/ HTTP/1.1" 200 2
+"GET /api/authors/ HTTP/1.1" 200 45
+C:\Users\pradatta\Desktop\LMS\LMS\Book\models.py changed, reloading.
+C:\Users\pradatta\Desktop\LMS\LMS\Book\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 38
+Internal Server Error: /api/books/
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column Book_book.AuthorId_id does not exist
+LINE 1: SELECT "Book_book"."BookId", "Book_book"."Title", "Book_book...
+                                                          ^
+HINT:  Perhaps you meant to reference the column "Book_book.author_id".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Book\views.py", line 15, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column Book_book.AuthorId_id does not exist
+LINE 1: SELECT "Book_book"."BookId", "Book_book"."Title", "Book_book...
+                                                          ^
+HINT:  Perhaps you meant to reference the column "Book_book.author_id".
+
+"GET /api/books/ HTTP/1.1" 500 165219
+Internal Server Error: /api/books/
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column Book_book.AuthorId_id does not exist
+LINE 1: SELECT "Book_book"."BookId", "Book_book"."Title", "Book_book...
+                                                          ^
+HINT:  Perhaps you meant to reference the column "Book_book.author_id".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Book\views.py", line 15, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column Book_book.AuthorId_id does not exist
+LINE 1: SELECT "Book_book"."BookId", "Book_book"."Title", "Book_book...
+                                                          ^
+HINT:  Perhaps you meant to reference the column "Book_book.author_id".
+
+"GET /api/books/ HTTP/1.1" 500 165219
+"GET /api/authors/ HTTP/1.1" 200 45
+Internal Server Error: /api/books/
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column Book_book.AuthorId_id does not exist
+LINE 1: SELECT "Book_book"."BookId", "Book_book"."Title", "Book_book...
+                                                          ^
+HINT:  Perhaps you meant to reference the column "Book_book.author_id".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Book\views.py", line 15, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column Book_book.AuthorId_id does not exist
+LINE 1: SELECT "Book_book"."BookId", "Book_book"."Title", "Book_book...
+                                                          ^
+HINT:  Perhaps you meant to reference the column "Book_book.author_id".
+
+"GET /api/books/ HTTP/1.1" 500 165219
+Internal Server Error: /api/books/
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column Book_book.AuthorId_id does not exist
+LINE 1: SELECT "Book_book"."BookId", "Book_book"."Title", "Book_book...
+                                                          ^
+HINT:  Perhaps you meant to reference the column "Book_book.author_id".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Book\views.py", line 15, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column Book_book.AuthorId_id does not exist
+LINE 1: SELECT "Book_book"."BookId", "Book_book"."Title", "Book_book...
+                                                          ^
+HINT:  Perhaps you meant to reference the column "Book_book.author_id".
+
+"GET /api/books/ HTTP/1.1" 500 165219
+"GET /api/authors/ HTTP/1.1" 200 45
+Internal Server Error: /api/books/
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column Book_book.AuthorId_id does not exist
+LINE 1: SELECT "Book_book"."BookId", "Book_book"."Title", "Book_book...
+                                                          ^
+HINT:  Perhaps you meant to reference the column "Book_book.author_id".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Book\views.py", line 15, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column Book_book.AuthorId_id does not exist
+LINE 1: SELECT "Book_book"."BookId", "Book_book"."Title", "Book_book...
+                                                          ^
+HINT:  Perhaps you meant to reference the column "Book_book.author_id".
+
+"GET /api/books/ HTTP/1.1" 500 165219
+C:\Users\pradatta\Desktop\LMS\LMS\Book\models.py changed, reloading.
+C:\Users\pradatta\Desktop\LMS\LMS\Book\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/books/
+"GET /api/books/ HTTP/1.1" 401 183
+Not Found: /
+"GET / HTTP/1.1" 404 2889
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2940
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7493
+C:\Users\pradatta\Desktop\LMS\LMS\LMS\settings.py changed, reloading.
+C:\Users\pradatta\Desktop\LMS\LMS\LMS\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/login/ HTTP/1.1" 200 8048
+"GET /api/books/ HTTP/1.1" 200 2
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 57
+"POST /api/books/ HTTP/1.1" 201 105
+Watching for file changes with StatReloader
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 48
+"POST /api/books/ HTTP/1.1" 201 105
+"GET /api/books/ HTTP/1.1" 200 213
+"GET /api/authors/ HTTP/1.1" 200 45
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 38
+"GET /api/books/ HTTP/1.1" 200 213
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/books/ HTTP/1.1" 200 213
+"GET /api/authors/ HTTP/1.1" 200 45
+"POST /api/books/ HTTP/1.1" 201 115
+"GET /api/books/ HTTP/1.1" 200 329
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/books/ HTTP/1.1" 200 329
+Internal Server Error: /api/books/10
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/books/10/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/books/10 HTTP/1.1" 500 71569
+"GET /api/books/ HTTP/1.1" 200 329
+"GET /api/books/ HTTP/1.1" 200 329
+Internal Server Error: /api/books/10
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/books/10/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/books/10 HTTP/1.1" 500 71569
+"GET /api/books/ HTTP/1.1" 200 329
+Watching for file changes with StatReloader
+"GET /api/books/ HTTP/1.1" 200 329
+Internal Server Error: /api/books/10
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/books/10/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/books/10 HTTP/1.1" 500 71569
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/books/ HTTP/1.1" 200 329
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/books/ HTTP/1.1" 200 329
+Internal Server Error: /api/books/10
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/books/10/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/books/10 HTTP/1.1" 500 71433
+"GET /api/books/ HTTP/1.1" 200 329
+Bad Request: /api/books/10/
+"PUT /api/books/10/ HTTP/1.1" 400 104
+Watching for file changes with StatReloader
+Bad Request: /api/books/10/
+"PUT /api/books/10/ HTTP/1.1" 400 104
+Internal Server Error: /api/books/10/
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Book\views.py", line 18, in retrieve
+    Book = self.service.get_Book_by_id(pk)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Book\service.py", line 11, in get_Book_by_id
+    return self.repository.get_by_id(Book_id)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Book\repositories.py", line 11, in get_by_id
+    return self.model.objects.filter(Book_id=Book_id).first()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1303, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\db\models\sql\query.py", line 1768, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'Book_id' into field. Choices are: BookId, Genre, ISBN, Quantity, Title, author, author_id, transactions
+"GET /api/books/10/ HTTP/1.1" 500 147978
+C:\Users\pradatta\Desktop\LMS\LMS\Book\service.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/books/10/ HTTP/1.1" 200 115
+Method Not Allowed: /api/books/10/
+"POST /api/books/10/ HTTP/1.1" 405 41
+Bad Request: /api/books/10/
+"PUT /api/books/10/ HTTP/1.1" 400 48
+Watching for file changes with StatReloader
+"PUT /api/books/10/ HTTP/1.1" 200 113
+Bad Request: /api/books/10/
+"PUT /api/books/10/ HTTP/1.1" 400 48
+C:\Users\pradatta\Desktop\LMS\LMS\Book\models.py changed, reloading.
+Watching for file changes with StatReloader
+"PUT /api/books/10/ HTTP/1.1" 200 113
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/books/ HTTP/1.1" 200 327
+"GET /api/books/ HTTP/1.1" 200 327
+"GET /api/authors/ HTTP/1.1" 200 45
+"POST /api/books/ HTTP/1.1" 201 107
+"GET /api/books/ HTTP/1.1" 200 435
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/books/ HTTP/1.1" 200 435
+Internal Server Error: /api/books/11
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/books/11/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/books/11 HTTP/1.1" 500 72947
+"GET /api/books/ HTTP/1.1" 200 435
+Watching for file changes with StatReloader
+"DELETE /api/books/11/ HTTP/1.1" 204 0
+"GET /api/books/ HTTP/1.1" 200 327
+"GET /api/authors/ HTTP/1.1" 200 45
+"DELETE /api/books/10/ HTTP/1.1" 204 0
+"GET /api/books/ HTTP/1.1" 200 213
+"GET /api/authors/ HTTP/1.1" 200 45
+"DELETE /api/books/9/ HTTP/1.1" 204 0
+"GET /api/books/ HTTP/1.1" 200 107
+"GET /api/authors/ HTTP/1.1" 200 45
+"DELETE /api/books/8/ HTTP/1.1" 204 0
+"GET /api/books/ HTTP/1.1" 200 2
+"GET /api/authors/ HTTP/1.1" 200 45
+"POST /api/books/ HTTP/1.1" 201 101
+"GET /api/books/ HTTP/1.1" 200 103
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/books/ HTTP/1.1" 200 103
+Internal Server Error: /api/books/12
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/books/12/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/books/12 HTTP/1.1" 500 72947
+"GET /api/books/ HTTP/1.1" 200 103
+Watching for file changes with StatReloader
+"GET /api/books/ HTTP/1.1" 200 103
+Internal Server Error: /api/books/12
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/books/12/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/books/12 HTTP/1.1" 500 71433
+"GET /api/books/ HTTP/1.1" 200 103
+Not Found: /api/books/10/
+"PUT /api/books/10/ HTTP/1.1" 404 26
+"PUT /api/books/12/ HTTP/1.1" 200 113
+"GET /api/books/ HTTP/1.1" 200 115
+Internal Server Error: /api/books/12
+Traceback (most recent call last):
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "c:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/api/books/12/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"PUT /api/books/12 HTTP/1.1" 500 71433
+"GET /api/books/ HTTP/1.1" 200 115
+- Broken pipe from ('127.0.0.1', 50640)
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/books/ HTTP/1.1" 200 115
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/books/ HTTP/1.1" 200 115
+"PUT /api/books/12/ HTTP/1.1" 200 109
+"GET /api/books/ HTTP/1.1" 200 111
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/books/ HTTP/1.1" 200 111
+"PUT /api/books/12/ HTTP/1.1" 200 111
+"GET /api/books/ HTTP/1.1" 200 113
+"GET /api/authors/ HTTP/1.1" 200 45
+- Broken pipe from ('127.0.0.1', 50653)
+Watching for file changes with StatReloader
+"GET /api/students/ HTTP/1.1" 200 128
+"GET /api/books/ HTTP/1.1" 200 113
+"GET /api/students/ HTTP/1.1" 200 128
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 128
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 128
+- Broken pipe from ('127.0.0.1', 50895)
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 128
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 128
+- Broken pipe from ('127.0.0.1', 51032)
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/books/ HTTP/1.1" 200 113
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 128
+"GET /api/students/ HTTP/1.1" 200 128
+- Broken pipe from ('127.0.0.1', 51071)
+- Broken pipe from ('127.0.0.1', 51049)
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 128
+"GET /api/students/ HTTP/1.1" 200 128
+"GET /api/students/ HTTP/1.1" 200 128
+- Broken pipe from ('127.0.0.1', 51117)
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 128
+"GET /api/students/ HTTP/1.1" 200 128
+"GET /api/students/ HTTP/1.1" 200 128
+"GET /api/students/ HTTP/1.1" 200 128
+"GET /api/students/ HTTP/1.1" 200 128
+- Broken pipe from ('127.0.0.1', 51170)
+- Broken pipe from ('127.0.0.1', 51146)
+"GET /api/authors/ HTTP/1.1" 200 45
+- Broken pipe from ('127.0.0.1', 51183)
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 128
+Bad Request: /api/students/
+"POST /api/students/ HTTP/1.1" 400 158
+code 400, message Bad request syntax ('50')
+"50" 400 -
+"GET /api/students/ HTTP/1.1" 200 128
+Watching for file changes with StatReloader
+Bad Request: /api/students/
+"POST /api/students/ HTTP/1.1" 400 158
+code 400, message Bad request syntax ('50')
+"50" 400 -
+"GET /api/authors/ HTTP/1.1" 200 45
+C:\Users\pradatta\Desktop\LMS\LMS\Student\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/books/ HTTP/1.1" 200 113
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 128
+Bad Request: /api/students/
+"POST /api/students/ HTTP/1.1" 400 158
+code 400, message Bad request syntax ('50')
+"50" 400 -
+"GET /api/students/ HTTP/1.1" 200 128
+Watching for file changes with StatReloader
+"GET /api/students/ HTTP/1.1" 200 128
+"GET /api/students/ HTTP/1.1" 200 128
+Bad Request: /api/students/
+"POST /api/students/ HTTP/1.1" 400 158
+code 400, message Bad request syntax ('50')
+"50" 400 -
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/books/ HTTP/1.1" 200 113
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 128
+Bad Request: /api/students/
+"POST /api/students/ HTTP/1.1" 400 158
+code 400, message Bad request syntax ('50')
+"50" 400 -
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 128
+Bad Request: /api/students/
+"POST /api/students/ HTTP/1.1" 400 158
+code 400, message Bad request syntax ('50')
+"50" 400 -
+"GET /api/students/ HTTP/1.1" 200 128
+"GET /api/students/ HTTP/1.1" 200 128
+Bad Request: /api/students/
+"POST /api/students/ HTTP/1.1" 400 113
+"POST /api/students/ HTTP/1.1" 201 120
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 249
+Bad Request: /api/students/
+"POST /api/students/ HTTP/1.1" 400 50
+- Broken pipe from ('127.0.0.1', 51441)
+"GET /api/authors/ HTTP/1.1" 200 45
+C:\Users\pradatta\Desktop\LMS\LMS\Student\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/students/ HTTP/1.1" 200 249
+Bad Request: /api/students/
+"POST /api/students/ HTTP/1.1" 400 50
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/books/ HTTP/1.1" 200 113
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 249
+Bad Request: /api/students/
+"POST /api/students/ HTTP/1.1" 400 72
+"GET /api/students/ HTTP/1.1" 200 249
+"POST /api/students/ HTTP/1.1" 201 125
+"GET /api/students/ HTTP/1.1" 200 375
+"GET /api/students/ HTTP/1.1" 200 375
+Bad Request: /api/students/0/
+"PUT /api/students/0/ HTTP/1.1" 400 53
+"GET /api/students/ HTTP/1.1" 200 375
+C:\Users\pradatta\Desktop\LMS\LMS\Student\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/books/ HTTP/1.1" 200 113
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 375
+"GET /api/students/ HTTP/1.1" 200 375
+Bad Request: /api/students/0/
+"PUT /api/students/0/ HTTP/1.1" 400 53
+"GET /api/students/ HTTP/1.1" 200 375
+"GET /api/students/ HTTP/1.1" 200 375
+"GET /api/students/ HTTP/1.1" 200 375
+Bad Request: /api/students/0/
+"PUT /api/students/0/ HTTP/1.1" 400 53
+"GET /api/students/ HTTP/1.1" 200 375
+- Broken pipe from ('127.0.0.1', 51653)
+- Broken pipe from ('127.0.0.1', 51626)
+"GET /api/authors/ HTTP/1.1" 200 45
+"GET /api/students/ HTTP/1.1" 200 375
+"GET /api/students/ HTTP/1.1" 200 375
+Bad Request: /api/students/3/
+"PUT /api/students/3/ HTTP/1.1" 400 53
+"GET /api/students/ HTTP/1.1" 200 375
+"GET /api/students/3/ HTTP/1.1" 200 125
+Bad Request: /api/students/3/
+"PUT /api/students/3/ HTTP/1.1" 400 53
+C:\Users\pradatta\Desktop\LMS\LMS\Student\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/students/ HTTP/1.1" 200 375
+"PUT /api/students/3/ HTTP/1.1" 200 125
+"GET /api/students/ HTTP/1.1" 200 375
+Watching for file changes with StatReloader
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x0000018033A40830>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Error fetching transactions: column Transaction_transaction.TransactionId does not exist
+LINE 1: SELECT "Transaction_transaction"."TransactionId", "Transacti...
+               ^
+HINT:  Perhaps you meant to reference the column "Transaction_transaction.transaction_id".
+
+An error occurred in function list: Testing error in list method
+Internal Server Error: /api/transactions/
+"GET /api/transactions/ HTTP/1.1" 500 84
+Watching for file changes with StatReloader
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001D462C50AD0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Error fetching transactions: relation "Transaction_transaction" does not exist
+LINE 1: ...nName", "Transaction_transaction"."BookName" FROM "Transacti...
+                                                             ^
+
+An error occurred in function list: Testing error in list method
+Internal Server Error: /api/transactions/
+"GET /api/transactions/ HTTP/1.1" 500 84
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\models.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2889
+Watching for file changes with StatReloader
+Unauthorized: /api/transactions/
+"GET /api/transactions/ HTTP/1.1" 401 51
+Unauthorized: /api/register/
+"POST /api/register/ HTTP/1.1" 401 51
+Not Found: /
+"GET / HTTP/1.1" 404 2889
+Method Not Allowed: /api/register/
+"GET /api/register/ HTTP/1.1" 405 5689
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+"OPTIONS /api/register/ HTTP/1.1" 200 5962
+"POST /api/register/ HTTP/1.1" 201 6372
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7493
+"POST /api/login/ HTTP/1.1" 200 8048
+Bad Request: /api/register/
+"POST /api/register/ HTTP/1.1" 400 80
+Bad Request: /api/authors/
+"POST /api/authors/ HTTP/1.1" 400 70
+"POST /api/authors/ HTTP/1.1" 201 39
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 184
+"POST /api/books/ HTTP/1.1" 201 79
+Bad Request: /api/students/
+"POST /api/students/ HTTP/1.1" 400 158
+"POST /api/students/ HTTP/1.1" 201 105
+Not Found: /api/transaction/
+"POST /api/transaction/ HTTP/1.1" 404 13056
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CCBACDC2D0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'name': 'xxx', 'email': 'xxx@gmail.com', 'contact_number': 'xxxxxxxxxxxxx', 'department': 'xxx'}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 191
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CCBACDC7D0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'student': '1', 'user': '1', 'book': '1', 'transaction_type': 'return', 'date': '2025/05/05'}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 41
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CCBACE55B0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'student': '1', 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': '1', 'transaction_type': 'return', 'date': '2025/05/05'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 179
+Watching for file changes with StatReloader
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x0000021966868980>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'student': '1', 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': '1', 'transaction_type': 'return', 'date': '2025/05/05'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 179
+Executing function: retrieve with arguments: (<Transaction.views.TransactionViewSet object at 0x0000021967024550>, <rest_framework.request.Request: GET '/api/transactions/2/'>), {'pk': '2'}
+Fetching transaction with id 2.
+Function retrieve executed successfully
+"GET /api/transactions/2/ HTTP/1.1" 200 179
+Executing function: update with arguments: (<Transaction.views.TransactionViewSet object at 0x0000021967027D90>, <rest_framework.request.Request: PUT '/api/transactions/2/'>), {'pk': '2'}
+Updating transaction with id 2 with data: {'student': '1', 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': '1', 'transaction_type': 'return', 'date': '2025/05/05'}
+Function update executed successfully
+"PUT /api/transactions/2/ HTTP/1.1" 200 179
+Watching for file changes with StatReloader
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\views.py", line 16, in get
+    dashboard_data = DashboardService.get_dashboard_data()
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\services.py", line 15, in get_dashboard_data
+    'total_transaction_count': repo.get_total_transactions(),
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\repositories.py", line 21, in get_total_transactions
+    return Transaction.all().count()
+           ^^^^^^^^^^^^^^^
+AttributeError: type object 'Transaction' has no attribute 'all'
+"GET /api/dashboard/ HTTP/1.1" 500 102494
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\views.py", line 16, in get
+    dashboard_data = DashboardService.get_dashboard_data()
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\services.py", line 15, in get_dashboard_data
+    'total_transaction_count': repo.get_total_transactions(),
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\repositories.py", line 21, in get_total_transactions
+    return Transaction.all().count()
+           ^^^^^^^^^^^^^^^
+AttributeError: type object 'Transaction' has no attribute 'all'
+"GET /api/dashboard/ HTTP/1.1" 500 102485
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\views.py", line 16, in get
+    dashboard_data = DashboardService.get_dashboard_data()
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\services.py", line 15, in get_dashboard_data
+    'total_transaction_count': repo.get_total_transactions(),
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\repositories.py", line 21, in get_total_transactions
+    return Transaction.all().count()
+           ^^^^^^^^^^^^^^^
+AttributeError: type object 'Transaction' has no attribute 'all'
+"GET /api/dashboard/ HTTP/1.1" 500 102485
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\views.py", line 16, in get
+    dashboard_data = DashboardService.get_dashboard_data()
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\services.py", line 15, in get_dashboard_data
+    'total_transaction_count': repo.get_total_transactions(),
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\repositories.py", line 21, in get_total_transactions
+    return Transaction.all().count()
+           ^^^^^^^^^^^^^^^
+AttributeError: type object 'Transaction' has no attribute 'all'
+"GET /api/dashboard/ HTTP/1.1" 500 102485
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\views.py", line 16, in get
+    dashboard_data = DashboardService.get_dashboard_data()
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\services.py", line 15, in get_dashboard_data
+    'total_transaction_count': repo.get_total_transactions(),
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\repositories.py", line 21, in get_total_transactions
+    return Transaction.all().count()
+           ^^^^^^^^^^^^^^^
+AttributeError: type object 'Transaction' has no attribute 'all'
+"GET /api/dashboard/ HTTP/1.1" 500 102485
+Watching for file changes with StatReloader
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\views.py", line 16, in get
+    dashboard_data = DashboardService.get_dashboard_data()
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\services.py", line 15, in get_dashboard_data
+    'total_transaction_count': repo.get_total_transactions(),
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\repositories.py", line 21, in get_total_transactions
+    return Transaction.all().count()
+           ^^^^^^^^^^^^^^^
+AttributeError: type object 'Transaction' has no attribute 'all'
+"GET /api/dashboard/ HTTP/1.1" 500 102485
+Method Not Allowed: /api/dashboard/
+"POST /api/dashboard/ HTTP/1.1" 405 41
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\views.py", line 16, in get
+    dashboard_data = DashboardService.get_dashboard_data()
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\services.py", line 15, in get_dashboard_data
+    'total_transaction_count': repo.get_total_transactions(),
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\repositories.py", line 21, in get_total_transactions
+    return Transaction.all().count()
+           ^^^^^^^^^^^^^^^
+AttributeError: type object 'Transaction' has no attribute 'all'
+"GET /api/dashboard/ HTTP/1.1" 500 102485
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001F379F70EC0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 2 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 361
+C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/dashboards/
+Traceback (most recent call last):
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\pradatta\Desktop\LMS\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\views.py", line 16, in get
+    dashboard_data = DashboardService.get_dashboard_data()
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\services.py", line 15, in get_dashboard_data
+    'total_transaction_count': repo.get_total_transactions(),
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\repositories.py", line 21, in get_total_transactions
+    return Transaction.all().count()
+           ^^^^^^^^^^^^^^^
+AttributeError: type object 'Transaction' has no attribute 'all'
+"GET /api/dashboards/ HTTP/1.1" 500 102501
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x00000269562BC6E0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 2 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 397
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x00000269569C79D0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 191
+C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Dashboard\models.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/login/ HTTP/1.1" 200 594
+"GET /api/authors/ HTTP/1.1" 200 41
+"GET /api/books/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 41
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AAF96A0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 2 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 397
+- Broken pipe from ('127.0.0.1', 49865)
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA67D90>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 2 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 397
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA64410>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 2 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 397
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA4DBA0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 2 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 397
+"GET /api/authors/ HTTP/1.1" 200 41
+- Broken pipe from ('127.0.0.1', 49993)
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA4DBA0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 2 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 397
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA75FD0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 2 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 397
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AB96580>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 2 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 397
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AB96AD0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 2, 'student': 1, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2025/05/05'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 197
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AADA350>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 2, 'student': 1, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2025/05/05'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 197
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AADB750>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 2, 'student': 1, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2025/05/05'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 197
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AC717C0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 2, 'student': 1, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2020/05/05'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 197
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AC737A0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 2, 'student': 1, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2019/05/05'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 197
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA68910>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 2, 'student': 1, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2018/05/05'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 197
+"GET /api/students/ HTTP/1.1" 200 107
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AB9A7B0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AB99630>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA6BCB0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AB9B230>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA68C90>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AB99C50>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA68750>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AB99D30>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 191
+code 400, message Bad request syntax ('A0')
+"A0" 400 -
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AB989F0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA69E10>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 191
+code 400, message Bad request syntax ('A0')
+"A0" 400 -
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA68670>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 191
+code 400, message Bad request syntax ('A0')
+"A0" 400 -
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AB9B3F0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA69010>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 191
+code 400, message Bad request syntax ('A0')
+"A0" 400 -
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA6A0B0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA68E50>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Fetched 8 transactions.
+Function list executed successfully
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+"GET /api/transactions/ HTTP/1.1" 200 1585
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AB99EF0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA69B70>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 41
+"GET /api/authors/ HTTP/1.1" 200 41
+"GET /api/books/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AB98910>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA699B0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA6BE70>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 191
+code 400, message Bad request syntax ('A0')
+"A0" 400 -
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA6AF90>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 8 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1585
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AB98E50>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 191
+code 400, message Bad request syntax ('A0')
+"A0" 400 -
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA683D0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'student': 1, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2018/05/05'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 197
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA69FD0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 9 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1783
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+- Broken pipe from ('127.0.0.1', 50714)
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AB9AC10>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 9 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1783
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA690F0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 191
+code 400, message Bad request syntax ('A0')
+"A0" 400 -
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001929AA684B0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 9 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1783
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x00000183D07BC2F0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'student': 1, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2018/05/05'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 198
+Watching for file changes with StatReloader
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9B010830>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 10 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1982
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9AE60690>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 0, 'student': 1, 'user': None, 'book': 1, 'transaction_type': 'Return', 'date': '2020/05/05', 'student_name': None, 'librarian_name': None, 'book_name': None}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 97
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9AF85E50>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 10 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 1982
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9B103100>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'student': 1, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2018/05/05'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 198
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9B1A2FD0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 0, 'student': 1, 'user': None, 'book': 1, 'transaction_type': 'Return', 'date': '2020/05/05', 'student_name': None, 'librarian_name': None, 'book_name': None}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 97
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9B134050>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 11 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 2181
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+- Broken pipe from ('127.0.0.1', 50858)
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9AF63130>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 11 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 2181
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9AF61480>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 11 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 2181
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9B254A50>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 0, 'student': 1, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'Return', 'date': '2020/05/05', 'student_name': None, 'librarian_name': None, 'book_name': None}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 58
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9AF58A50>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 11 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 2181
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+- Broken pipe from ('127.0.0.1', 50899)
+"GET /api/authors/ HTTP/1.1" 200 41
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9AFA3E30>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 11 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 2181
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9B242990>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 0, 'student': 1, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2020/05/05', 'student_name': None, 'librarian_name': None, 'book_name': None}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 198
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9B10E890>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 12 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 2380
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9A923070>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 12 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 2380
+"GET /api/students/ HTTP/1.1" 200 107
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9AE982F0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 0, 'student': 1, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2020/08/08', 'student_name': None, 'librarian_name': None, 'book_name': None}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 198
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001CF9B1FD550>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 13 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 2579
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\LMS\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\core\emil.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\LMS\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x00000252F96EC6E0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'student': 1, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2018/05/05'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 198
+Bad Request: /api/students/
+"POST /api/students/ HTTP/1.1" 400 158
+"POST /api/students/ HTTP/1.1" 201 119
+Not Found: /api/transaction/
+"POST /api/transaction/ HTTP/1.1" 404 13614
+Not Found: /api/transaction/
+"POST /api/transaction/ HTTP/1.1" 404 13614
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x00000252F9723ED0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'student': 2, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2018/05/05'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 203
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x00000252F9EB0550>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 15 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 2982
+"GET /api/students/ HTTP/1.1" 200 227
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x00000252FA02CB00>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 0, 'student': 2, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2020/08/08', 'student_name': None, 'librarian_name': None, 'book_name': None}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 203
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x00000252F9E22C40>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 16 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 3186
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x00000252F9E46D50>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 16 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 3186
+"GET /api/students/ HTTP/1.1" 200 227
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x00000252F9F50F30>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 16 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 3186
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x00000252F9673DF0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 16 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 3186
+"GET /api/students/ HTTP/1.1" 200 227
+"GET /api/books/ HTTP/1.1" 200 81
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x00000252F9F5A350>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 0, 'student': 2, 'user': '67b68c43-0d59-4255-992c-91a31e977d7f', 'book': 1, 'transaction_type': 'return', 'date': '2020/08/08', 'student_name': None, 'librarian_name': None, 'book_name': None}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 203
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x00000252F9F5A450>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 17 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 3390
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x00000252F9EC9A90>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 17 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 3390
+"GET /api/students/ HTTP/1.1" 200 227
+"GET /api/books/ HTTP/1.1" 200 81
+"GET /api/authors/ HTTP/1.1" 200 41
+"GET /api/authors/ HTTP/1.1" 200 41
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pradatta\Desktop\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/books/ HTTP/1.1" 200 81
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Transaction\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\core\queue_publisher.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 3036
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3087
+Not Found: /register/
+"GET /register/ HTTP/1.1" 404 3081
+Method Not Allowed: /api/register/
+"GET /api/register/ HTTP/1.1" 405 5689
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7493
+"POST /api/login/ HTTP/1.1" 200 8048
+D:\Download\LMS\LMS\LMS\Transaction\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\LMS\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\LMS\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\LMS\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\Student\service.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2889
+"GET /api/authors/ HTTP/1.1" 200 6898
+"POST /api/authors/ HTTP/1.1" 201 7091
+"GET /api/books/ HTTP/1.1" 200 6868
+Bad Request: /api/books/
+"POST /api/books/ HTTP/1.1" 400 6979
+"POST /api/books/ HTTP/1.1" 201 7110
+"GET /api/students/ HTTP/1.1" 200 6913
+"POST /api/students/ HTTP/1.1" 201 7218
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001DC8A7A12B0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 0 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 6973
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001DC8A758690>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 1, 'student': 1, 'user': 1, 'book': 1, 'transaction_type': 'borrow', 'date': '2025-02-23T10:00:00Z', 'student_name': 'John Doe', 'librarian_name': 'Librarian1', 'book_name': 'The Adventures of Tom Sawyer'}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 7055
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001DC8A268E90>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 1, 'student': 1, 'user': 1, 'book': 1, 'transaction_type': 'borrow', 'date': '2020/05/05', 'student_name': 'John Doe', 'librarian_name': 'Librarian1', 'book_name': 'The Adventures of Tom Sawyer'}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 7086
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001DC8A1AFF00>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+An error occurred in function create: JSON parse error - Expecting value: line 4 column 14 (char 62)
+Internal Server Error: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 500 118
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000001DC8A73D260>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 0 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 6973
+D:\Download\LMS\LMS\LMS\Student\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000002796AE54D70>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 1, 'student': 1, 'user': 'ebc8d256-2595-4d22-b13a-297695073539', 'book': 1, 'transaction_type': 'borrow', 'date': '2025-02-23T10:00:00Z', 'student_name': 'John Doe', 'librarian_name': 'Librarian1', 'book_name': 'The Adventures of Tom Sawyer'}
+Function create executed successfully
+Bad Request: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 400 7055
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000002766FAECAD0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 0 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 6973
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000002767015DBD0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+An error occurred in function create: JSON parse error - Expecting value: line 4 column 15 (char 63)
+Internal Server Error: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 500 118
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x000002766FF71A70>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 0 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 6973
+Watching for file changes with StatReloader
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001C35756CC20>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 1, 'student': 1, 'user': 'ebc8d256-2595-4d22-b13a-297695073539', 'book': 1, 'transaction_type': 'borrow', 'date': '2025/05/05', 'student_name': 'John Doe', 'librarian_name': 'Librarian1', 'book_name': 'The Adventures of Tom Sawyer'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 7411
+D:\Download\LMS\LMS\LMS\core\queue_publisher.py changed, reloading.
+Watching for file changes with StatReloader
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x00000195F352C980>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 1, 'student': 1, 'user': 'ebc8d256-2595-4d22-b13a-297695073539', 'book': 1, 'transaction_type': 'borrow', 'date': '2025/05/05', 'student_name': 'Jane Smith', 'librarian_name': 'xxx', 'book_name': 'The Adventures of Tom Sawyer'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 7411
+"GET /api/students/ HTTP/1.1" 200 7244
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+"POST /api/students/ HTTP/1.1" 201 7230
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x00000195F3C856D0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 2 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 7933
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x00000195F3C603E0>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 2, 'student': 2, 'user': 'ebc8d256-2595-4d22-b13a-297695073539', 'book': 1, 'transaction_type': 'borrow', 'date': '2025/05/05', 'student_name': 'Jane Smith', 'librarian_name': 'xxx', 'book_name': 'The Adventures of Tom Sawyer'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 7411
+"GET /api/students/ HTTP/1.1" 200 7587
+"POST /api/students/ HTTP/1.1" 201 7226
+Executing function: list with arguments: (<Transaction.views.TransactionViewSet object at 0x00000195F3D07BD0>, <rest_framework.request.Request: GET '/api/transactions/'>), {}
+Fetching all transactions.
+Fetching transactions.
+Fetched 3 transactions.
+Function list executed successfully
+"GET /api/transactions/ HTTP/1.1" 200 8413
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x00000195F3C71A50>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 3, 'student': 3, 'user': 'ebc8d256-2595-4d22-b13a-297695073539', 'book': 1, 'transaction_type': 'borrow', 'date': '2025/05/05', 'student_name': 'Jane Smith', 'librarian_name': 'xxx', 'book_name': 'The Adventures of Tom Sawyer'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 7411
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x00000195F3B1E300>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 4, 'student': 3, 'user': 'ebc8d256-2595-4d22-b13a-297695073539', 'book': 1, 'transaction_type': 'borrow', 'date': '2025/05/05', 'student_name': 'Jane Smith', 'librarian_name': 'xxx', 'book_name': 'The Adventures of Tom Sawyer'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 7411
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\LMS\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\LMS\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\LMS\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\core\queue_publisher.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/transations/
+"POST /api/transations/ HTTP/1.1" 404 13056
+Watching for file changes with StatReloader
+Not Found: /api/transations/
+"POST /api/transations/ HTTP/1.1" 404 13056
+Not Found: /api/transations/
+"POST /api/transations/ HTTP/1.1" 404 13056
+Not Found: /
+"GET / HTTP/1.1" 404 2889
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2940
+Not Found: /api/registers/
+"GET /api/registers/ HTTP/1.1" 404 13049
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2889
+Not Found: /api/registers/
+"GET /api/registers/ HTTP/1.1" 404 13049
+Method Not Allowed: /api/register/
+"GET /api/register/ HTTP/1.1" 405 5689
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+D:\Download\LMS\LMS\LMS\Auth\models.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 7493
+"POST /api/login/ HTTP/1.1" 200 8048
+Not Found: /api/transations/
+"POST /api/transations/ HTTP/1.1" 404 13056
+Not Found: /api/transations/
+"POST /api/transations/ HTTP/1.1" 404 13056
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001EDDF189D30>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 1, 'student': 1, 'user': 'ebc8d256-2595-4d22-b13a-297695073539', 'book': 1, 'transaction_type': 'borrow', 'date': '2005/05/05', 'student_name': 'John Doe', 'librarian_name': 'Jane Smith', 'book_name': 'Introduction to Python'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 229
+Executing function: create with arguments: (<Transaction.views.TransactionViewSet object at 0x000001EDDF712D50>, <rest_framework.request.Request: POST '/api/transactions/'>), {}
+Creating a new transaction with data: {'transaction_id': 1, 'student': 1, 'user': 'ebc8d256-2595-4d22-b13a-297695073539', 'book': 1, 'transaction_type': 'borrow', 'date': '2005/05/05', 'student_name': 'John Doe', 'librarian_name': 'Jane Smith', 'book_name': 'Introduction to Python'}
+Function create executed successfully
+"POST /api/transactions/ HTTP/1.1" 201 229
+Watching for file changes with StatReloader
+D:\Download\LMS\LMS\LMS\core\queue_publisher.py changed, reloading.
+Watching for file changes with StatReloader
