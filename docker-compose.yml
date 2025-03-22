@@ -1,0 +1,42 @@
+# version: "3.8"
+# services:
+#   app:
+#     build: .
+#     volumes:
+#       - .:/LMS
+#     ports:
+#       - 8000:8000
+#     container_name: app_container
+# #    command: gunicorn LMS.LMS.wsgi:application --bind 0.0.0.0:8000
+
+services:
+ api:
+  image: lms-app:latest
+  command: >
+     sh -c "python manage.py makemigrations &&
+         python manage.py migrate &&
+         python manage.py runserver 0.0.0.0:8000"
+  ports:
+   - 8000:8000
+  # env_file:
+  #  - api.env
+  depends_on:
+   - db
+  # volumes:
+  #  - api-media:/API-PROJECT/mediafiles
+  
+ db:
+  image: postgres:17
+  volumes:
+   - postgres_data:/var/lib/postgresql/data/
+  environment:
+   - POSTGRES_USER=postgres
+   - POSTGRES_PASSWORD=xxx
+   - POSTGRES_DB=yoo
+  ports:
+   - 5432:5432
+
+volumes:
+ postgres_data:
+ 
+  # api-media:

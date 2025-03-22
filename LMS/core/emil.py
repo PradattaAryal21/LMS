@@ -6,7 +6,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def send_transaction_email(user_id, transaction_id):
+def send_transaction_emaill(transaction_id):
     try:
         # Fetch transaction details
         transaction = Transaction.objects.get(transaction_id=transaction_id)
@@ -29,8 +29,6 @@ def send_transaction_email(user_id, transaction_id):
         )
         
         logger.info(f"Transaction email sent to {student.email} for transaction ID {transaction_id}")
-    except Student.DoesNotExist:
-        logger.error(f"Student not found for user_id {user_id}")
     except Transaction.DoesNotExist:
         logger.error(f"Transaction not found with transaction_id {transaction_id}")
     except Exception as e:

@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 from datetime import timedelta
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -58,13 +59,24 @@ LOGGING = {
         },
     },
 }
+
+
+# settings.py
+CELERY_BROKER_URL = os.getenv("RABBITMQ_URL", "amqps://defhsify:omnBvSPMX35gPEvr2LscqyuB1FFSbdU2@cougar.rmq.cloudamqp.com/defhsify")
+CELERY_RESULT_BACKEND = 'rpc://'
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TIMEZONE = 'UTC'
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'xxx',
+        'NAME': 'yoo',
         'USER': 'postgres',
         'PASSWORD': 'xxx',
-        'HOST': 'localhost',  # Change if using a remote database
+        'HOST': 'db',  # Change if using a remote database
         'PORT': '5432',       # Default PostgreSQL port
     }
 }

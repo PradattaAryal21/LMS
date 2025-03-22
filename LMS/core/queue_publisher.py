@@ -2,38 +2,64 @@ import pika
 import json
 import logging
 import os
+from django.conf import settings
+from Student.models import Student
+from Transaction.models import Transaction
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Use environment variable for RabbitMQ URL
-RABBITMQ_URL = os.getenv("RABBITMQ_URL", "amqps://defhsify:omnBvSPMX35gPEvr2LscqyuB1FFSbdU2@cougar.rmq.cloudamqp.com/defhsify")
+RABBITMQ_URL = os.getenv(
+    "RABBITMQ_URL",
+    "amqp://guest:guest@localhost:5672/"
+)
 
-def publish_transaction_email(user_id, transaction_id):
+def publish_transaction_email(transaction_id):
     try:
+        # Fetch transaction details
+        transaction = Transaction.objects.select_related("student").get(transaction_id=transaction_id)
+        student = transaction.student
+
+        # Prepare email data
+        email_data = {
+            "email": student.email,
+            "subject": "Transaction Completed Successfully",
+            "message": f"""
+            Hello {student.name},
+
+            Your transaction has been successfully completed.
+
+            Transaction ID: {transaction.transaction_id}
+            Book: {transaction.book_name}
+            Transaction Type: {transaction.get_transaction_type_display()}
+            Date: {transaction.date.strftime('%Y-%m-%d %H:%M:%S')}
+
+            Thank you for using our library system.
+
+            Best Regards,
+            Library Team
+            """
+        }
+
         # Establish RabbitMQ connection
         params = pika.URLParameters(RABBITMQ_URL)
         connection = pika.BlockingConnection(params)
         channel = connection.channel()
-
-     
         channel.queue_declare(queue='transaction_email_queue', durable=True)
-
-        # Prepare the message
-        message = json.dumps({'user_id': user_id, 'transaction_id': transaction_id})
 
         # Publish the message
         channel.basic_publish(
             exchange='',
             routing_key='transaction_email_queue',
-            body=message,
-            properties=pika.BasicProperties(
-                delivery_mode=2,  # Make message persistent
-            )
+            body=json.dumps(email_data),
+            properties=pika.BasicProperties(delivery_mode=2)  # Make message persistent
         )
 
-        logger.info(f"Published email task to queue for user {user_id} and transaction {transaction_id}")
+        logger.info(f"Published email task to queue for transaction {transaction_id}")
+    except Transaction.DoesNotExist:
+        logger.error(f"Transaction not found with transaction_id {transaction_id}")
     except Exception as e:
         logger.error(f"Error publishing message to RabbitMQ: {e}")
     finally:
@@ -42,4 +68,22 @@ def publish_transaction_email(user_id, transaction_id):
 
 # Example usage
 if __name__ == '__main__':
-    publish_transaction_email(user_id=123, transaction_id=456)
+    publish_transaction_email(transaction_id=456)
+"""import logging
+from Transaction.tasks import send_transaction_email
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+def publish_transaction_email(transaction_id):
+    try:
+        # Call the Celery task
+        send_transaction_email.delay(transaction_id)
+        logger.info(f"Published email task to Celery for transaction {transaction_id}")
+    except Exception as e:
+        logger.error(f"Error publishing message to Celery: {e}")
+
+# Example usage
+if __name__ == '__main__':
+    publish_transaction_email(transaction_id=456)"""

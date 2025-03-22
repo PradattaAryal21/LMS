@@ -1,7 +1,7 @@
 from rest_framework import viewsets, status
 from rest_framework.response import Response
 from core.queue_publisher import publish_transaction_email
-from core.emil import send_transaction_email
+#from core.emil import send_transaction_email
 from .service import TransactionService
 from .serializer import TransactionSerializer
 from rest_framework.permissions import AllowAny
@@ -42,7 +42,8 @@ class TransactionViewSet(viewsets.ViewSet):
         if serializer.is_valid():
             transaction = self.service.create_Transaction(serializer.validated_data)
             try:
-                publish_transaction_email(transaction.student.student_id, transaction.transaction_id)  # ✅ Properly indented
+#               send_transaction_email( transaction.transaction_id)
+                publish_transaction_email(transaction.transaction_id)  # ✅ Properly indented
             except Exception as e:
                 logger.error(f"Failed to send email: {e}")
             return Response(TransactionSerializer(transaction).data, status=status.HTTP_201_CREATED)
